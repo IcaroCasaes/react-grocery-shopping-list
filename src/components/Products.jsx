@@ -9,7 +9,7 @@ function Products({ products, onProductClick, onDeleteProductClick }) {
     const query = new URLSearchParams();
     query.set("title", product.title);
     query.set("description", product.description);
-    query.set("amount", product.amount);
+    query.set("quantity", product.quantity);
     navigate(`/product?${query.toString()}`);
   }
   return (

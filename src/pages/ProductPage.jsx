@@ -7,7 +7,7 @@ function ProductPage() {
   const [searchParams] = useSearchParams();
   const title = searchParams.get("title");
   const description = searchParams.get("description");
-  const amount = searchParams.get("amount");
+  const quantity = searchParams.get("quantity");
   return (
     <div className="h-screen w-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
@@ -22,7 +22,7 @@ function ProductPage() {
         </div>
         <div className="bg-slate-200 p-4 rounded-md">
           <h2 className="text-xl text-slate-600 font-bold">{title}</h2>
-          <p className="text-slate-600">Amount: {amount}</p>
+          <p className="text-slate-600">Quantity: {quantity}</p>
           <p className="text-slate-600">Description: {description}</p>
         </div>
       </div>

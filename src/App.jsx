@@ -45,12 +45,12 @@ function App() {
     setProducts(newProducts);
   }
 
-  function onAddProductSubmit(title, amount, description) {
+  function onAddProductSubmit(title, quantity, description) {
     const newProduct = {
       id: v4(),
       title,
       description,
-      amount,
+      quantity,
       isPurchased: false,
     };
     setProducts([...products, newProduct]);
